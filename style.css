@@ -1,0 +1,416 @@
+:root {
+
+    --GrayishBlue: hsl(216, 30%, 68%);
+    --VeryDarkViolet: hsl(270, 9%, 17%);
+    --DarkGrayishViolet: hsl(273, 4%, 51%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Karla", serif;
+    font-size: 16px;
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 200px;
+    line-height: 1.625rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo-header {
+    height: 18px;
+    padding-left: 2rem;
+}
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsla(0, 0%, 100%, 1);
+    color: var(--DarkGrayishViolet);
+    height: 80px;
+}
+
+.navbar-links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    /* Adjust this if needed */
+    left: 0;
+    background-color: hsla(0, 0%, 100%, 1);
+    width: 100%;
+    z-index: 10;
+}
+
+/* Show navbar links when active */
+.navbar-links.active {
+    display: block;
+    background: hsla(271, 9%, 17%, 1);
+    color: white;
+    height: 100vh;
+}
+
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navbar-links li {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    color: white;
+}
+
+.toggle-button {
+    display: flex;
+    padding-right: 2rem;
+
+}
+
+.intro {
+    background-color: #2D2641;
+    color: white;
+}
+
+.intro-img {
+    width: 100%;
+}
+
+.intro-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 4.375rem 1.5rem;
+
+}
+
+.intro-text p {
+    padding-bottom: 1rem;
+}
+
+.plans-btn {
+    align-self: center;
+    height: 2.5rem;
+    width: 160px;
+    border: solid 1px white;
+    color: white;
+    background-color: #2D2641;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.divider hr {
+    height: 1px;
+    background: hsla(296, 30%, 68%, 1);
+    width: 150px;
+
+}
+
+.we-are-different {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 9rem 1.5rem 6rem 1.5rem;
+}
+
+.we-are-different h1 {
+    padding-bottom: 4rem;
+    padding-top: 1.5rem;
+}
+
+.we-are-different h2 {
+    font-family: "DM Serif Display", serif;
+}
+
+.we-are-different p {
+    color: hsla(271, 5%, 51%, 1);
+    padding-bottom: 2rem;
+}
+
+.we-are-different img {
+    height: 86px;
+    width: 86px;
+}
+
+.find-out {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+
+.find-out-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #2D2641;
+    color: hsla(0, 0%, 100%, 1);
+    max-width: 327px;
+    height: 344px;
+
+}
+
+.find-out-btn {
+    align-self: center;
+    height: 2.5rem;
+    width: 160px;
+    border: solid 1px white;
+    color: white;
+    background-color: #2D2641;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.find-out h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 40px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: var(--VeryLightGray);
+}
+
+.footer-logo {
+    padding-top: 4rem;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 144px;
+    padding: 2rem 0;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.divider-2 {
+    height: 1px;
+    background: hsla(0, 0%, 86%, 1);
+    width: 80%;
+}
+
+.footer-blurb {
+    text-transform: uppercase;
+    color: hsla(256, 26%, 20%, 1);
+    font-size: 13px;
+    font-weight: 700;
+    padding-top: 2rem;
+    line-height: 15.2px;
+    letter-spacing: 2px;
+}
+
+.footer-blurb p {
+    color: hsla(271, 5%, 51%, 1);
+    padding-bottom: 1rem;
+}
+
+.footer-blurb ul {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 1rem;
+}
+
+.footer-blurb li {
+    padding-bottom: .8rem;
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px) {
+
+    .container {
+        width: 80%;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    /* Flex row for logo and links */
+    .logo-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .navbar-links {
+        display: flex;
+        align-items: center;
+        position: static;
+        max-width: 60%;
+        /* Remove absolute positioning */
+    }
+
+    .navbar-links ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        /* Adjust spacing between links as desired */
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-links li a {
+        color: hsla(271, 5%, 51%, 1);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    li#id-1 {
+        color: #2D2641;
+    }
+
+    .navbar-links li a:hover,
+    .navbar-links li a:focus {
+        color: hsla(271, 9%, 17%, 1);
+
+    }
+
+    .nav-btn {
+        color: #2D2641
+    }
+
+    .toggle-button {
+        display: none;
+    }
+
+    /* We are different */
+
+    .different-container {
+        max-width: 90%;
+    }
+
+    .different h1 {
+        padding-left: 3rem;
+    }
+
+    .different-details {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: left;
+        width: 90%;
+        gap: 30px;
+    }
+
+    .different-heading {
+        align-self: flex-start;
+    }
+
+    /* Find out */
+
+    .find-out-container {
+        max-width: 90%;
+        width: 100vw;
+        /* Makes it full viewport width */
+        margin: 0;
+        /* Remove default margin to avoid side gaps */
+        padding: 2rem 0;
+        /* Optional padding for visual spacing */
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .find-out-h2 {
+        flex-basis: 50%;
+    }
+
+    /* Footer Logo */
+    .footer-logo {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .footer-img {
+        padding-top: 2rem;
+    }
+
+    .footer-blurb {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: left;
+        width: 90%;
+        gap: 4rem;
+    }
+}
+
+
+/*Desktop*/
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
