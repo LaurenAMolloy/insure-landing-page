@@ -54,17 +54,18 @@ I knew the nav would be a challenge so I decided to tackle this. After I was hap
 
 ### What I learned
 
-Throughout this process I learnt how to create a responsive nav making using of the active class in CSS and "toggle" using JavaScript. I practiced using media queries, Flexbox and positioning to ensure the nav was responsive.
+Throughout this process I learnt how to create a responsive nav making using of the active class in CSS and "toggle" using JavaScript. I practiced using media queries, Flexbox and positioning to ensure the nav was responsive. I learnt how to position background patterns and use flex reverse to change the order of the hero image according to the screen size.
 
 
 ### Continued development
 
-I would like to continue to build similar pages in terms of layout to get more efficient when buidlign landing pages, specifically the navigation.
+I would like to continue to build similar pages in terms of layout to get more efficient when buidlign landing pages, specifically the navigation. I would also like more practice adding decoration patterns ensuring a repsonsive layout is maintained at all times.
 
 ### Useful resources
 
-- [Web Dev Simplified Nav tut](https://www.youtube.com/watch?v=At4B7A4GOPg) - This helped me create teh navbar. I really liked the simple solution and will use this as a guide when I build more challenges.
+- [Web Dev Simplified Nav tut](https://www.youtube.com/watch?v=At4B7A4GOPg) - This helped me create the navbar. I really liked the simple solution and will use this as a guide when I build more challenges.
 
+- [Blog by Nabendu Biswas](https://nabendu.org/insure-landing-page) - I found the solution for changing order of the hero image on this blog. 
 
 ## Author
 
