@@ -172,6 +172,18 @@ p {
     letter-spacing: 2px;
 }
 
+.plans-btn:hover {
+    color: hsla(271, 9%, 17%, 1);
+    background-color: white;
+    cursor: pointer;
+}
+
+.find-out-btn:hover {
+    color: hsla(271, 9%, 17%, 1);
+    background-color: white;
+    cursor: pointer;
+}
+
 .divider hr {
     height: 1px;
     background: hsla(296, 30%, 68%, 1);
@@ -438,6 +450,12 @@ p {
 
     .plans-btn {
         align-self: flex-start;
+    }
+
+    .plans-btn,
+    .find-out-btn {
+        position: relative;
+        z-index: 10;
     }
 
     .plans-btn:hover,
